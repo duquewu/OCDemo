@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  RootViewController.h
 //  OCDemo
 //
 //  Created by WuNan on 14/12/2.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface RootViewController : UITableViewController
 
 @end
