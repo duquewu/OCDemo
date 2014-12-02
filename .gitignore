@@ -1,5 +1,18 @@
 .DS_Store
+
+*.pbxuser
+*.perspective
+*.perspectivev3
+
+*.mode1v3
+*.mode2v3
+
+*.xcodeproj/xcuserdata/*.xcuserdatad
+
+*.xccheckout
+*.xcuserdatad
+
 Pods
 
-OCDemo.xcodeproj/project.xcworkspace/xcuserdata
-OCDemo.xcworkspace/xcuserdata
+DerivedData
+build
