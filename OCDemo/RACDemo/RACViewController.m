@@ -10,7 +10,6 @@
 #import <ReactiveCocoa/ReactiveCocoa.h>
 @interface RACViewController ()
 @property(nonatomic,copy)NSString* name;
-@property(nonatomic,strong)UISwitch* on;
 @end
 
 @implementation RACViewController
@@ -20,14 +19,16 @@
     [self.view setBackgroundColor:[UIColor whiteColor]];
     UIButton* button1 = [UIButton buttonWithType:UIButtonTypeSystem];
     [button1 setTitle:@"button1" forState:UIControlStateNormal];
-    button1.frame = CGRectMake(80, 80, 80, 30);
+    button1.frame = CGRectMake(20, 80, 80, 44);
     [self.view addSubview:button1];
     button1.rac_command = [[RACCommand alloc]initWithSignalBlock:^RACSignal *(id input) {
         NSLog(@"123");
         return [RACSignal empty];
     }];
-    
-    
+    UISwitch * swit = [[UISwitch alloc] initWithFrame:CGRectMake(120, 80, 80, 44)];
+    [self.view addSubview:swit];
+
+    //信号过滤
     RACSignal * signal =  RACObserve(self, name) ;
     [[signal filter:^BOOL(id value) {
         if ([value hasPrefix:@"张"])
@@ -41,6 +42,7 @@
     self.name = @"lisi";
     self.name = @"张三";
     
+    //序列信号
     RACSequence * seq = [@[@"123",@"223"].rac_sequence map:^id(id value) {
         return [value stringByAppendingString:@"---"];
     }];
@@ -49,17 +51,6 @@
     }];
     
     
-    
-    self.on = [[UISwitch alloc]initWithFrame:CGRectMake(0, 0, 80, 40)];
-    self.on.center = CGPointMake(200, 200);
-    self.on.userInteractionEnabled=NO;
-    [self.view addSubview:self.on];
-    
-    
-    
-    RAC(self.on,on) = [RACSignal combineLatest:@[seq.signal] reduce:^id{
-        return @((arc4random()%2 == 0));
-    }];
     
     //command等待被触发的signal, 当command被触发时,执行block;
     //执行完成后需返回一个signal
@@ -82,6 +73,48 @@
     }];
     //执行command
     [command execute:@"123"];
-}
+    
+    
+    
+    UITextField * tf1 = [[UITextField alloc]initWithFrame:CGRectMake(20, 120, 280, 44)];
+    tf1.borderStyle = UITextBorderStyleRoundedRect;
+    [self.view addSubview:tf1];
+    
+    
+    UILabel * label1 = [[UILabel alloc]initWithFrame:CGRectMake(20, 180, 280, 44)];
+    label1.backgroundColor = [UIColor colorWithWhite:0.77 alpha:1];
+    [self.view addSubview:label1];
+    
 
+    //RAC label的值=textfiled的值
+    [tf1.rac_textSignal subscribeNext:^(id x) {
+        label1.text = x;
+    }];
+    [RACObserve(label1, text) subscribeNext:^(id x) {
+        NSLog(@"%@",x);
+    }];
+    
+    [[RACSignal combineLatest:@[tf1.rac_textSignal,RACObserve(label1, text)] reduce:^id(NSString * tfText,NSString*labelText){
+        return @(tfText.length>0 && labelText.length>0);
+    }]subscribeNext:^(id x) {
+        NSLog(@"----%@",x);
+        swit.on = [x boolValue];
+    }];
+    // 钩子
+    [[self rac_signalForSelector:@selector(viewWillAppear:)]subscribeNext:^(id x) {
+        NSLog(@"viewWillAppear");
+    }];
+    [[self rac_signalForSelector:@selector(viewDidAppear:)]subscribeNext:^(id x) {
+        NSLog(@"viewDidAppear");
+    }];
+    
+}
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    [[self.view subviews]enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        if ([obj isKindOfClass:[UITextField class]]) {
+            [obj resignFirstResponder];
+        }
+    }];
+}
 @end
