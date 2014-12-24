@@ -42,6 +42,9 @@
 		702BDD5D1A2E103200DE37FD /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		702C50EC1A2ED5D40022C7D8 /* RACViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACViewController.h; sourceTree = "<group>"; };
 		702C50ED1A2ED5D40022C7D8 /* RACViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACViewController.m; sourceTree = "<group>"; };
+		702E59971A4122A3007869A3 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		702E59981A4122A3007869A3 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		702E59991A4122A3007869A3 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		70B7F83D1A2DEB5500051901 /* OCDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70B7F8401A2DEB5500051901 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		70B7F8421A2DEB5500051901 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -257,6 +260,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 70B7F8341A2DEB5500051901;
 			productRefGroup = 70B7F83E1A2DEB5500051901 /* Products */;
@@ -359,6 +363,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				70B7F84A1A2DEB5500051901 /* en */,
+				702E59981A4122A3007869A3 /* zh-Hans */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -367,6 +372,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				70B7F8531A2DEB5500051901 /* Base */,
+				702E59971A4122A3007869A3 /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -375,6 +381,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				70B7F8691A2DEB5500051901 /* en */,
+				702E59991A4122A3007869A3 /* zh-Hans */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
