@@ -20,17 +20,18 @@ PODS:
   - AFNetworking/UIKit (2.3.1):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
-  - CocoaLumberjack (2.0.0-beta):
-    - CocoaLumberjack/CLI (= 2.0.0-beta)
-    - CocoaLumberjack/Core (= 2.0.0-beta)
-    - CocoaLumberjack/Extensions (= 2.0.0-beta)
-  - CocoaLumberjack/CLI (2.0.0-beta):
+  - ASProgressPopUpView (0.8)
+  - CocoaLumberjack (2.0.0-rc):
+    - CocoaLumberjack/Default (= 2.0.0-rc)
+    - CocoaLumberjack/Extensions (= 2.0.0-rc)
+  - CocoaLumberjack/Core (2.0.0-rc)
+  - CocoaLumberjack/Default (2.0.0-rc):
     - CocoaLumberjack/Core
-  - CocoaLumberjack/Core (2.0.0-beta)
-  - CocoaLumberjack/Extensions (2.0.0-beta):
-    - CocoaLumberjack/Core
+  - CocoaLumberjack/Extensions (2.0.0-rc):
+    - CocoaLumberjack/Default
+  - M13ProgressSuite (1.2.7)
   - Masonry (0.5.3)
-  - pop (1.0.6)
+  - pop (1.0.7)
   - ReactiveCocoa (2.3.1):
     - ReactiveCocoa/UI (= 2.3.1)
   - ReactiveCocoa/Core (2.3.1):
@@ -41,16 +42,20 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (~> 2.3.1)
+  - ASProgressPopUpView (~> 0.8)
   - CocoaLumberjack (~> 2.0.0-beta)
+  - M13ProgressSuite (~> 1.2.7)
   - Masonry (~> 0.5.3)
   - pop (~> 1.0.6)
   - ReactiveCocoa (~> 2.3.1)
 
 SPEC CHECKSUMS:
   AFNetworking: 6d7b76aa5d04c8c37daad3eef4b7e3f2a7620da3
-  CocoaLumberjack: aadc76d7bd6c839ca84b38ed50cbf89d7cf8c693
+  ASProgressPopUpView: 7443b650bb54acb6557ab8495eaa6adea2183577
+  CocoaLumberjack: 6186e27827fc574b50b16c10102fcc591437f06c
+  M13ProgressSuite: 931cde7e91d474c04edb4b34517d75ca6d88ccf2
   Masonry: 35368c2ca9577ca87722c12fc52c4bad9b1c1516
-  pop: e518794da38942c05255eb64b36d894e70cb4f00
+  pop: 2f14a1ea61339767af9e66741b418c831b3844df
   ReactiveCocoa: dca75777b9d18990c8714a3a6f2149f29b4d1462
 
 COCOAPODS: 0.35.0

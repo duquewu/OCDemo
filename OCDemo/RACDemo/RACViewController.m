@@ -8,6 +8,7 @@
 
 #import "RACViewController.h"
 #import <ReactiveCocoa/ReactiveCocoa.h>
+#import <ASProgressPopUpView/ASProgressPopUpView.h>
 @interface RACViewController ()
 @property(nonatomic,copy)NSString* name;
 @end
@@ -87,7 +88,7 @@
     
 
     //RAC label的值=textfiled的值
-    [tf1.rac_textSignal subscribeNext:^(id x) {
+    [tf1.rac_textSignal  subscribeNext:^(id x) {
         label1.text = x;
     }];
     [RACObserve(label1, text) subscribeNext:^(id x) {
@@ -108,6 +109,85 @@
         NSLog(@"viewDidAppear");
     }];
     
+    
+    ASProgressPopUpView * progress = [[ASProgressPopUpView alloc]initWithFrame:CGRectMake(0, 200, 320, 40)];
+    progress.tag = 200;
+    [self.view addSubview:progress];
+    progress.progress = 0.3;
+    [progress showPopUpViewAnimated:YES];
+    
+    UISlider * slider = [[UISlider alloc]initWithFrame:CGRectMake(0, 400, 320, 40)];
+    [slider addTarget:self action:@selector(valueChanged:) forControlEvents:UIControlEventValueChanged];
+    [self.view addSubview:slider];
+    
+    
+    
+    
+    NSDictionary * dic = @{
+                           @"string":@"3000W",
+                           [NSValue valueWithRange:NSMakeRange(0, 4)]:
+                               @[
+                                   @{NSForegroundColorAttributeName:[UIColor blueColor]},
+                                   @{NSFontAttributeName:[UIFont systemFontOfSize:20]}
+                                   ],
+                           [NSValue valueWithRange:NSMakeRange(4, 1)]:
+                               @[
+                                   @{NSForegroundColorAttributeName:[UIColor redColor]},
+                                   @{NSFontAttributeName:[UIFont systemFontOfSize:12]}
+                                ]
+                           };
+    NSDictionary * dic2=  [RACViewController testWithString:@"200￥" rangeValueAndAttributs:@{
+                                                                                             [NSValue valueWithRange:NSMakeRange(0, 3)]:@[
+                                                                                                     @{NSForegroundColorAttributeName:[UIColor blueColor]},
+                                                                                                     @{NSFontAttributeName:[UIFont systemFontOfSize:20]}
+                                                                                                     ],
+                                                                                             [NSValue valueWithRange:NSMakeRange(3, 1) ]:@[
+                                                                                                     @{NSForegroundColorAttributeName:[UIColor redColor]},
+                                                                                                     @{NSFontAttributeName:[UIFont systemFontOfSize:12]}
+                                                                                                     ]
+                                                                                             }];
+    NSAttributedString* ma = [RACViewController attributeStringWithDic:dic2];
+    
+    UILabel * l = [[UILabel alloc]initWithFrame:CGRectMake(0, 400, 320, 40)];
+    [self.view addSubview:l];
+    NSLog(@"%d",[@"3000W" integerValue]);
+//    NSMutableAttributedString * mAttStr =[[NSMutableAttributedString alloc]initWithString:@"30000元"];
+//    NSRange numberRange = NSMakeRange(0, mAttStr.string.length-1);
+//    NSRange wordRange = NSMakeRange(mAttStr.string.length-1, 1);
+//    [mAttStr addAttributes:@{NSForegroundColorAttributeName:[UIColor redColor]} range:numberRange];
+//    [mAttStr addAttributes:@{NSForegroundColorAttributeName:[UIColor blueColor]} range:wordRange];
+//    [mAttStr addAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:20]} range:wordRange];
+    l.attributedText = ma;
+}
++(NSDictionary*)testWithString:(NSString*)str  rangeValueAndAttributs:(NSDictionary*)attributes
+{
+    NSMutableDictionary * mDic = [NSMutableDictionary new];
+    [mDic setObject:str forKey:@"string"];
+    [attributes enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
+        [mDic setValue:obj forKey:key];
+    }];
+    return mDic;
+}
+
++(NSAttributedString*)attributeStringWithDic:(NSDictionary*)dic
+{
+    NSMutableAttributedString* mAttStr = [[NSMutableAttributedString alloc]initWithString:dic[@"string"]];
+    [dic enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
+        if ([key isKindOfClass:[NSValue class]]) {
+            key = (NSValue*)key;
+            NSRange  r = [key rangeValue];
+            [obj enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+                [mAttStr addAttributes:obj range:r];
+            }];
+        }
+    }];
+    return mAttStr;
+}
+
+-(void)valueChanged:(UISlider*)slider
+{
+    ASProgressPopUpView* progress = [self.view viewWithTag:200];
+    progress.progress = slider.value;
 }
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
