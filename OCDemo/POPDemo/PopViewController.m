@@ -41,19 +41,26 @@
 -(void)tap:(NSObject*)sender
 {
     _isMoved = !_isMoved;
-    POPSpringAnimation * animation = [POPSpringAnimation animationWithPropertyNamed:kPOPLayerPosition];
-    animation.springBounciness = 15;
-    animation.springSpeed = 20;
+    POPSpringAnimation * frameAnimation = [POPSpringAnimation animationWithPropertyNamed:kPOPLayerPosition];
+    frameAnimation.springBounciness = 15;
+    frameAnimation.springSpeed = 20;
     
+    POPBasicAnimation * colorAnimation = [POPBasicAnimation animationWithPropertyNamed:kPOPViewBackgroundColor];
+
+    colorAnimation.duration = 0.5;
     
     if (_isMoved) {
-        animation.toValue = [NSValue valueWithCGPoint:CGPointMake(100, 100)];
+        colorAnimation.fromValue = [UIColor redColor];
+        colorAnimation.toValue = [UIColor blueColor];
+        frameAnimation.toValue = [NSValue valueWithCGPoint:CGPointMake(100, 100)];
     }
     else{
-        animation.toValue = [NSValue valueWithCGPoint:CGPointMake(200, 200)];
+        colorAnimation.toValue = [UIColor redColor];
+        colorAnimation.fromValue = [UIColor blueColor];
+        frameAnimation.toValue = [NSValue valueWithCGPoint:CGPointMake(200, 200)];
     }
-    
-    [[self.view viewWithTag:100] pop_addAnimation:animation forKey:@"test"];
-    
+    UIView * view = [self.view viewWithTag:100];
+    [view pop_addAnimation:frameAnimation forKey:@"frame"];
+    [view pop_addAnimation:colorAnimation forKey:@"color"];
 }
 @end

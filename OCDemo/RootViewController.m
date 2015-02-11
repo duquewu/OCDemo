@@ -9,6 +9,7 @@
 #import "RootViewController.h"
 #import "PopViewController.h"
 #import "RACViewController.h"
+#import "TestViewController.h"
 #import <objc/runtime.h>
 @interface RootViewController ()
 {
@@ -22,8 +23,8 @@
     [super viewDidLoad];
     _demosArr = @[
                   [PopViewController new],
-                  [RACViewController new]
-                  ];
+                  [RACViewController new],
+                  [TestViewController new]];
     
 }
 

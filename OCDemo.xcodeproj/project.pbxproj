@@ -10,6 +10,8 @@
 		697F99A58644A677FFA223F7 /* libPods-OCDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C135714F3727A97783DF0DE /* libPods-OCDemo.a */; };
 		702BDD5E1A2E103200DE37FD /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 702BDD5D1A2E103200DE37FD /* RootViewController.m */; };
 		702C50EE1A2ED5D40022C7D8 /* RACViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 702C50ED1A2ED5D40022C7D8 /* RACViewController.m */; };
+		70AB10711A89EBE00053E179 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70AB106F1A89EBE00053E179 /* TestViewController.m */; };
+		70AB10721A89EBE00053E179 /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70AB10701A89EBE00053E179 /* TestViewController.xib */; };
 		70B7F8411A2DEB5500051901 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70B7F8401A2DEB5500051901 /* Foundation.framework */; };
 		70B7F8431A2DEB5500051901 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70B7F8421A2DEB5500051901 /* CoreGraphics.framework */; };
 		70B7F8451A2DEB5500051901 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70B7F8441A2DEB5500051901 /* UIKit.framework */; };
@@ -45,6 +47,9 @@
 		702E59971A4122A3007869A3 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		702E59981A4122A3007869A3 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		702E59991A4122A3007869A3 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		70AB106E1A89EBE00053E179 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		70AB106F1A89EBE00053E179 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		70AB10701A89EBE00053E179 /* TestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
 		70B7F83D1A2DEB5500051901 /* OCDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70B7F8401A2DEB5500051901 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		70B7F8421A2DEB5500051901 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -144,6 +149,9 @@
 				702BDD5C1A2E103200DE37FD /* RootViewController.h */,
 				702BDD5D1A2E103200DE37FD /* RootViewController.m */,
 				70B7F8521A2DEB5500051901 /* Main.storyboard */,
+				70AB106E1A89EBE00053E179 /* TestViewController.h */,
+				70AB106F1A89EBE00053E179 /* TestViewController.m */,
+				70AB10701A89EBE00053E179 /* TestViewController.xib */,
 				702C50EB1A2ED5BA0022C7D8 /* RACDemo */,
 				70B7F8751A2E09B300051901 /* POPDemo */,
 				70B7F8581A2DEB5500051901 /* Images.xcassets */,
@@ -280,6 +288,7 @@
 			files = (
 				70B7F8591A2DEB5500051901 /* Images.xcassets in Resources */,
 				70B7F84B1A2DEB5500051901 /* InfoPlist.strings in Resources */,
+				70AB10721A89EBE00053E179 /* TestViewController.xib in Resources */,
 				70B7F8541A2DEB5500051901 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -332,6 +341,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70AB10711A89EBE00053E179 /* TestViewController.m in Sources */,
 				70B7F8781A2E09C700051901 /* PopViewController.m in Sources */,
 				70B7F8511A2DEB5500051901 /* AppDelegate.m in Sources */,
 				702C50EE1A2ED5D40022C7D8 /* RACViewController.m in Sources */,
