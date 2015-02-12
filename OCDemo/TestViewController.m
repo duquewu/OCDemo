@@ -28,9 +28,9 @@
 - (IBAction)doButton:(id)sender {
     @try {
         NSDictionary * dic = NSDictionaryOfVariableBindings(sender,_segment);
-//        [self.view removeConstraints:self.view.constraints];
-//        [sender removeConstraints:[sender constraints]];
-//        [_segment removeConstraints:[_segment constraints]];
+        [self.view removeConstraints:self.view.constraints];
+        [sender removeConstraints:[sender constraints]];
+        [_segment removeConstraints:[_segment constraints]];
         
         NSString * vf1 = @"V:|-[sender(200)]-47-[_segment(80)]-|";
         NSString * vf2 = @"|-8-[sender(200)]-8-|";

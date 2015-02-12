@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5005D374D969FC8DBF96DCCA /* CustomeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5005D87196241A7901EF05A5 /* CustomeButton.m */; };
 		697F99A58644A677FFA223F7 /* libPods-OCDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C135714F3727A97783DF0DE /* libPods-OCDemo.a */; };
 		702BDD5E1A2E103200DE37FD /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 702BDD5D1A2E103200DE37FD /* RootViewController.m */; };
 		702C50EE1A2ED5D40022C7D8 /* RACViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 702C50ED1A2ED5D40022C7D8 /* RACViewController.m */; };
@@ -40,6 +41,8 @@
 
 /* Begin PBXFileReference section */
 		4C135714F3727A97783DF0DE /* libPods-OCDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OCDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5005D87196241A7901EF05A5 /* CustomeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomeButton.m; sourceTree = "<group>"; };
+		5005DC72C341D22B3BF23F4D /* CustomeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomeButton.h; sourceTree = "<group>"; };
 		702BDD5C1A2E103200DE37FD /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		702BDD5D1A2E103200DE37FD /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		702C50EC1A2ED5D40022C7D8 /* RACViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACViewController.h; sourceTree = "<group>"; };
@@ -194,6 +197,8 @@
 			children = (
 				70B7F8761A2E09C700051901 /* PopViewController.h */,
 				70B7F8771A2E09C700051901 /* PopViewController.m */,
+				5005D87196241A7901EF05A5 /* CustomeButton.m */,
+				5005DC72C341D22B3BF23F4D /* CustomeButton.h */,
 			);
 			path = POPDemo;
 			sourceTree = "<group>";
@@ -347,6 +352,7 @@
 				702C50EE1A2ED5D40022C7D8 /* RACViewController.m in Sources */,
 				702BDD5E1A2E103200DE37FD /* RootViewController.m in Sources */,
 				70B7F84D1A2DEB5500051901 /* main.m in Sources */,
+				5005D374D969FC8DBF96DCCA /* CustomeButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
