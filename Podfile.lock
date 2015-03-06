@@ -30,6 +30,9 @@ PODS:
   - CocoaLumberjack/Extensions (2.0.0-rc):
     - CocoaLumberjack/Default
   - M13ProgressSuite (1.2.7)
+  - Mantle (1.5.4):
+    - Mantle/extobjc (= 1.5.4)
+  - Mantle/extobjc (1.5.4)
   - Masonry (0.5.3)
   - pop (1.0.7)
   - ReactiveCocoa (2.3.1):
@@ -45,6 +48,7 @@ DEPENDENCIES:
   - ASProgressPopUpView (~> 0.8)
   - CocoaLumberjack (~> 2.0.0-beta)
   - M13ProgressSuite (~> 1.2.7)
+  - Mantle (~> 1.5.4)
   - Masonry (~> 0.5.3)
   - pop (~> 1.0.6)
   - ReactiveCocoa (~> 2.3.1)
@@ -54,6 +58,7 @@ SPEC CHECKSUMS:
   ASProgressPopUpView: 7443b650bb54acb6557ab8495eaa6adea2183577
   CocoaLumberjack: 6186e27827fc574b50b16c10102fcc591437f06c
   M13ProgressSuite: 931cde7e91d474c04edb4b34517d75ca6d88ccf2
+  Mantle: d5fbaf30fbc58031223af13812c060e15934a1fe
   Masonry: 35368c2ca9577ca87722c12fc52c4bad9b1c1516
   pop: 2f14a1ea61339767af9e66741b418c831b3844df
   ReactiveCocoa: dca75777b9d18990c8714a3a6f2149f29b4d1462

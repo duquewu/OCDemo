@@ -111,6 +111,13 @@
 			path = RACDemo;
 			sourceTree = "<group>";
 		};
+		704AA5C01A8F6A5C006559F3 /* ModelDemo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ModelDemo;
+			sourceTree = "<group>";
+		};
 		70B7F8341A2DEB5500051901 = {
 			isa = PBXGroup;
 			children = (
@@ -155,6 +162,7 @@
 				70AB106E1A89EBE00053E179 /* TestViewController.h */,
 				70AB106F1A89EBE00053E179 /* TestViewController.m */,
 				70AB10701A89EBE00053E179 /* TestViewController.xib */,
+				704AA5C01A8F6A5C006559F3 /* ModelDemo */,
 				702C50EB1A2ED5BA0022C7D8 /* RACDemo */,
 				70B7F8751A2E09B300051901 /* POPDemo */,
 				70B7F8581A2DEB5500051901 /* Images.xcassets */,
@@ -421,6 +429,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -459,7 +468,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -481,10 +491,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OCDemo/OCDemo-Prefix.pch";
 				INFOPLIST_FILE = "OCDemo/OCDemo-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "e02f82cf-f8fe-46f1-8ef5-57f7dffe2e9b";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -495,10 +507,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OCDemo/OCDemo-Prefix.pch";
 				INFOPLIST_FILE = "OCDemo/OCDemo-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "e02f82cf-f8fe-46f1-8ef5-57f7dffe2e9b";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

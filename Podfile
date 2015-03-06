@@ -9,6 +9,7 @@ pod 'Masonry', '~> 0.5.3'
 pod 'pop', '~> 1.0.6'
 pod 'ASProgressPopUpView', '~> 0.8'
 pod 'M13ProgressSuite', '~> 1.2.7'
+pod 'Mantle', '~> 1.5.4'
 end
 
 target 'OCDemoTests' do
