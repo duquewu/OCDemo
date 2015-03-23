@@ -9,7 +9,6 @@
 #import "RootViewController.h"
 #import "PopViewController.h"
 #import "RACViewController.h"
-#import "TestViewController.h"
 #import <objc/runtime.h>
 @interface RootViewController ()
 {
@@ -24,7 +23,7 @@
     _demosArr = @[
                   [PopViewController new],
                   [RACViewController new],
-                  [TestViewController new]];
+                  ];
     
 }
 

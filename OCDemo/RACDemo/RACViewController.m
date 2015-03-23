@@ -11,6 +11,7 @@
 #import <ASProgressPopUpView/ASProgressPopUpView.h>
 @interface RACViewController ()
 @property(nonatomic,copy)NSString* name;
+@property(nonatomic,copy)NSString * name2;
 @end
 
 @implementation RACViewController
@@ -117,6 +118,7 @@
     [progress showPopUpViewAnimated:YES];
     
     UISlider * slider = [[UISlider alloc]initWithFrame:CGRectMake(0, 400, 320, 40)];
+    
     [slider addTarget:self action:@selector(valueChanged:) forControlEvents:UIControlEventValueChanged];
     [self.view addSubview:slider];
     
@@ -150,7 +152,7 @@
     
     UILabel * l = [[UILabel alloc]initWithFrame:CGRectMake(0, 400, 320, 40)];
     [self.view addSubview:l];
-    NSLog(@"%d",[@"3000W" integerValue]);
+    NSLog(@"%ld",[@"3000W" integerValue]);
 //    NSMutableAttributedString * mAttStr =[[NSMutableAttributedString alloc]initWithString:@"30000元"];
 //    NSRange numberRange = NSMakeRange(0, mAttStr.string.length-1);
 //    NSRange wordRange = NSMakeRange(mAttStr.string.length-1, 1);
@@ -158,6 +160,13 @@
 //    [mAttStr addAttributes:@{NSForegroundColorAttributeName:[UIColor blueColor]} range:wordRange];
 //    [mAttStr addAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:20]} range:wordRange];
     l.attributedText = ma;
+    
+    
+    RAC(self,name) = RACObserve(self, name2);
+    NSLog(@"-------------");
+    self.name2 = @"测试";
+    NSLog(@"self.name = %1$@,self.name2=%2$@",self.name,self.name2);
+    
 }
 +(NSDictionary*)testWithString:(NSString*)str  rangeValueAndAttributs:(NSDictionary*)attributes
 {
@@ -186,7 +195,7 @@
 
 -(void)valueChanged:(UISlider*)slider
 {
-    ASProgressPopUpView* progress = [self.view viewWithTag:200];
+    ASProgressPopUpView* progress =(ASProgressPopUpView*) [self.view viewWithTag:200];
     progress.progress = slider.value;
 }
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event

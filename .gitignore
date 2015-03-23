@@ -12,7 +12,7 @@
 *.xccheckout
 *.xcuserdatad
 
-Pods
+Pods/
 
 DerivedData
 build

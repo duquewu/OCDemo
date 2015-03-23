@@ -34,6 +34,29 @@ PODS:
     - Mantle/extobjc (= 1.5.4)
   - Mantle/extobjc (1.5.4)
   - Masonry (0.5.3)
+  - MIHCrypto (0.3.3):
+    - MIHCrypto/AES (= 0.3.3)
+    - MIHCrypto/Core (= 0.3.3)
+    - MIHCrypto/DES (= 0.3.3)
+    - MIHCrypto/Mathematics (= 0.3.3)
+    - MIHCrypto/MD5 (= 0.3.3)
+    - MIHCrypto/RSA (= 0.3.3)
+    - MIHCrypto/SHA (= 0.3.3)
+  - MIHCrypto/AES (0.3.3):
+    - MIHCrypto/Core
+  - MIHCrypto/Core (0.3.3):
+    - OpenSSL-Universal (~> 1.0.1.l)
+  - MIHCrypto/DES (0.3.3):
+    - MIHCrypto/Core
+  - MIHCrypto/Mathematics (0.3.3):
+    - MIHCrypto/Core
+  - MIHCrypto/MD5 (0.3.3):
+    - MIHCrypto/Core
+  - MIHCrypto/RSA (0.3.3):
+    - MIHCrypto/Core
+  - MIHCrypto/SHA (0.3.3):
+    - MIHCrypto/Core
+  - OpenSSL-Universal (1.0.1.l)
   - pop (1.0.7)
   - ReactiveCocoa (2.3.1):
     - ReactiveCocoa/UI (= 2.3.1)
@@ -50,6 +73,7 @@ DEPENDENCIES:
   - M13ProgressSuite (~> 1.2.7)
   - Mantle (~> 1.5.4)
   - Masonry (~> 0.5.3)
+  - MIHCrypto (~> 0.3.3)
   - pop (~> 1.0.6)
   - ReactiveCocoa (~> 2.3.1)
 
@@ -60,6 +84,8 @@ SPEC CHECKSUMS:
   M13ProgressSuite: 931cde7e91d474c04edb4b34517d75ca6d88ccf2
   Mantle: d5fbaf30fbc58031223af13812c060e15934a1fe
   Masonry: 35368c2ca9577ca87722c12fc52c4bad9b1c1516
+  MIHCrypto: 214c5985f051a2b5ba76536826a5d4ffa120667b
+  OpenSSL-Universal: ba0aeda135913e73f1dc785e13ef3204edf89b3e
   pop: 2f14a1ea61339767af9e66741b418c831b3844df
   ReactiveCocoa: dca75777b9d18990c8714a3a6f2149f29b4d1462
 
