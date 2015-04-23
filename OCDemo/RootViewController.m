@@ -9,6 +9,7 @@
 #import "RootViewController.h"
 #import "PopViewController.h"
 #import "RACViewController.h"
+#import "ScrollDemoViewController.h"
 #import <objc/runtime.h>
 @interface RootViewController ()
 {
@@ -20,9 +21,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    UITabBarController * tab = [[UITabBarController alloc]init];
+    tab.tabBar.translucent=NO;
+    [tab addChildViewController:[[ScrollDemoViewController alloc]initWithNibName:NSStringFromClass([ScrollDemoViewController class]) bundle:nil]];
     _demosArr = @[
                   [PopViewController new],
                   [RACViewController new],
+                  tab
                   ];
     
 }

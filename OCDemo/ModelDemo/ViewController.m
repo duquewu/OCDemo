@@ -12,7 +12,6 @@
 #import <AFNetworking/AFNetworking.h>
 #import <Masonry/Masonry.h>
 #import <ReactiveCocoa/ReactiveCocoa.h>
-#import <objc/runtime.h>
 @interface ViewController ()
 @property(nonatomic,copy)NSArray * statuses;
 @end

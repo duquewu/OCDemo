@@ -11,24 +11,6 @@
 		697F99A58644A677FFA223F7 /* libPods-OCDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C135714F3727A97783DF0DE /* libPods-OCDemo.a */; };
 		702BDD5E1A2E103200DE37FD /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 702BDD5D1A2E103200DE37FD /* RootViewController.m */; };
 		702C50EE1A2ED5D40022C7D8 /* RACViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 702C50ED1A2ED5D40022C7D8 /* RACViewController.m */; };
-		703722D61ABF0C8600D679DF /* BDAESCBC256Cryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 703722A31ABF0C8600D679DF /* BDAESCBC256Cryptor.m */; };
-		703722D71ABF0C8600D679DF /* BDAESCryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 703722A51ABF0C8600D679DF /* BDAESCryptor.m */; };
-		703722D81ABF0C8600D679DF /* BDCryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 703722A71ABF0C8600D679DF /* BDCryptor.m */; };
-		703722D91ABF0C8600D679DF /* BDCryptorError.m in Sources */ = {isa = PBXBuildFile; fileRef = 703722A91ABF0C8600D679DF /* BDCryptorError.m */; };
-		703722DA1ABF0C8600D679DF /* BDRSACryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 703722AB1ABF0C8600D679DF /* BDRSACryptor.m */; };
-		703722DB1ABF0C8600D679DF /* BDRSACryptorKeyPair.m in Sources */ = {isa = PBXBuildFile; fileRef = 703722AD1ABF0C8600D679DF /* BDRSACryptorKeyPair.m */; };
-		703722DC1ABF0C8600D679DF /* BDSHA512Cryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 703722AF1ABF0C8600D679DF /* BDSHA512Cryptor.m */; };
-		703722DD1ABF0C8600D679DF /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 703722B41ABF0C8600D679DF /* NSData+Base64.m */; };
-		703722DE1ABF0C8600D679DF /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 703722B61ABF0C8600D679DF /* NSString+Base64.m */; };
-		703722DF1ABF0C8600D679DF /* BDJSONError.m in Sources */ = {isa = PBXBuildFile; fileRef = 703722BD1ABF0C8600D679DF /* BDJSONError.m */; };
-		703722E01ABF0C8600D679DF /* NSArray+BDJSONSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 703722BF1ABF0C8600D679DF /* NSArray+BDJSONSerialization.m */; };
-		703722E11ABF0C8600D679DF /* NSData+BDJSONSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 703722C11ABF0C8600D679DF /* NSData+BDJSONSerialization.m */; };
-		703722E21ABF0C8600D679DF /* NSDictionary+BDJSONSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 703722C31ABF0C8600D679DF /* NSDictionary+BDJSONSerialization.m */; };
-		703722E31ABF0C8600D679DF /* NSDictionary+BDParseJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 703722C51ABF0C8600D679DF /* NSDictionary+BDParseJSON.m */; };
-		703722E41ABF0C8600D679DF /* NSObject+BDJSONSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 703722C71ABF0C8600D679DF /* NSObject+BDJSONSerialization.m */; };
-		703722E51ABF0C8600D679DF /* NSString+BDJSONSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 703722C91ABF0C8600D679DF /* NSString+BDJSONSerialization.m */; };
-		703722E61ABF0C8600D679DF /* NSString+BDUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 703722CC1ABF0C8600D679DF /* NSString+BDUtilities.m */; };
-		703722E71ABF0C8600D679DF /* BDError.m in Sources */ = {isa = PBXBuildFile; fileRef = 703722CF1ABF0C8600D679DF /* BDError.m */; };
 		703722E91ABFB5F100D679DF /* ewm.png in Resources */ = {isa = PBXBuildFile; fileRef = 703722E81ABFB5F100D679DF /* ewm.png */; };
 		703723341AC01B8000D679DF /* DrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 703723331AC01B8000D679DF /* DrawViewController.m */; };
 		7037233E1AC01C9100D679DF /* Status.m in Sources */ = {isa = PBXBuildFile; fileRef = 703723371AC01C9100D679DF /* Status.m */; };
@@ -49,6 +31,10 @@
 		70B7F86A1A2DEB5500051901 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 70B7F8681A2DEB5500051901 /* InfoPlist.strings */; };
 		70B7F86C1A2DEB5500051901 /* OCDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 70B7F86B1A2DEB5500051901 /* OCDemoTests.m */; };
 		70B7F8781A2E09C700051901 /* PopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70B7F8771A2E09C700051901 /* PopViewController.m */; };
+		70EBF7941AE09D48006520C7 /* ScrollDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70EBF7921AE09D48006520C7 /* ScrollDemoViewController.m */; };
+		70EBF7951AE09D48006520C7 /* ScrollDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70EBF7931AE09D48006520C7 /* ScrollDemoViewController.xib */; };
+		70EBF7971AE0A2A5006520C7 /* segcontrol_sel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 70EBF7961AE0A2A5006520C7 /* segcontrol_sel@2x.png */; };
+		70F49B7F1AE0058700F528A6 /* 1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 70F49B7E1AE0058700F528A6 /* 1@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,45 +58,6 @@
 		702E59971A4122A3007869A3 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		702E59981A4122A3007869A3 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		702E59991A4122A3007869A3 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
-		703722A21ABF0C8600D679DF /* BDAESCBC256Cryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDAESCBC256Cryptor.h; sourceTree = "<group>"; };
-		703722A31ABF0C8600D679DF /* BDAESCBC256Cryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDAESCBC256Cryptor.m; sourceTree = "<group>"; };
-		703722A41ABF0C8600D679DF /* BDAESCryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDAESCryptor.h; sourceTree = "<group>"; };
-		703722A51ABF0C8600D679DF /* BDAESCryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDAESCryptor.m; sourceTree = "<group>"; };
-		703722A61ABF0C8600D679DF /* BDCryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDCryptor.h; sourceTree = "<group>"; };
-		703722A71ABF0C8600D679DF /* BDCryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDCryptor.m; sourceTree = "<group>"; };
-		703722A81ABF0C8600D679DF /* BDCryptorError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDCryptorError.h; sourceTree = "<group>"; };
-		703722A91ABF0C8600D679DF /* BDCryptorError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDCryptorError.m; sourceTree = "<group>"; };
-		703722AA1ABF0C8600D679DF /* BDRSACryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDRSACryptor.h; sourceTree = "<group>"; };
-		703722AB1ABF0C8600D679DF /* BDRSACryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDRSACryptor.m; sourceTree = "<group>"; };
-		703722AC1ABF0C8600D679DF /* BDRSACryptorKeyPair.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDRSACryptorKeyPair.h; sourceTree = "<group>"; };
-		703722AD1ABF0C8600D679DF /* BDRSACryptorKeyPair.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDRSACryptorKeyPair.m; sourceTree = "<group>"; };
-		703722AE1ABF0C8600D679DF /* BDSHA512Cryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDSHA512Cryptor.h; sourceTree = "<group>"; };
-		703722AF1ABF0C8600D679DF /* BDSHA512Cryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDSHA512Cryptor.m; sourceTree = "<group>"; };
-		703722B01ABF0C8600D679DF /* Crypto-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Crypto-Prefix.pch"; sourceTree = "<group>"; };
-		703722B31ABF0C8600D679DF /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
-		703722B41ABF0C8600D679DF /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
-		703722B51ABF0C8600D679DF /* NSString+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Base64.h"; sourceTree = "<group>"; };
-		703722B61ABF0C8600D679DF /* NSString+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Base64.m"; sourceTree = "<group>"; };
-		703722BB1ABF0C8600D679DF /* BDJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDJSON.h; sourceTree = "<group>"; };
-		703722BC1ABF0C8600D679DF /* BDJSONError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDJSONError.h; sourceTree = "<group>"; };
-		703722BD1ABF0C8600D679DF /* BDJSONError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDJSONError.m; sourceTree = "<group>"; };
-		703722BE1ABF0C8600D679DF /* NSArray+BDJSONSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+BDJSONSerialization.h"; sourceTree = "<group>"; };
-		703722BF1ABF0C8600D679DF /* NSArray+BDJSONSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+BDJSONSerialization.m"; sourceTree = "<group>"; };
-		703722C01ABF0C8600D679DF /* NSData+BDJSONSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+BDJSONSerialization.h"; sourceTree = "<group>"; };
-		703722C11ABF0C8600D679DF /* NSData+BDJSONSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+BDJSONSerialization.m"; sourceTree = "<group>"; };
-		703722C21ABF0C8600D679DF /* NSDictionary+BDJSONSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+BDJSONSerialization.h"; sourceTree = "<group>"; };
-		703722C31ABF0C8600D679DF /* NSDictionary+BDJSONSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+BDJSONSerialization.m"; sourceTree = "<group>"; };
-		703722C41ABF0C8600D679DF /* NSDictionary+BDParseJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+BDParseJSON.h"; sourceTree = "<group>"; };
-		703722C51ABF0C8600D679DF /* NSDictionary+BDParseJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+BDParseJSON.m"; sourceTree = "<group>"; };
-		703722C61ABF0C8600D679DF /* NSObject+BDJSONSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+BDJSONSerialization.h"; sourceTree = "<group>"; };
-		703722C71ABF0C8600D679DF /* NSObject+BDJSONSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+BDJSONSerialization.m"; sourceTree = "<group>"; };
-		703722C81ABF0C8600D679DF /* NSString+BDJSONSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+BDJSONSerialization.h"; sourceTree = "<group>"; };
-		703722C91ABF0C8600D679DF /* NSString+BDJSONSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+BDJSONSerialization.m"; sourceTree = "<group>"; };
-		703722CB1ABF0C8600D679DF /* NSString+BDUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+BDUtilities.h"; sourceTree = "<group>"; };
-		703722CC1ABF0C8600D679DF /* NSString+BDUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+BDUtilities.m"; sourceTree = "<group>"; };
-		703722CE1ABF0C8600D679DF /* BDError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDError.h; sourceTree = "<group>"; };
-		703722CF1ABF0C8600D679DF /* BDError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDError.m; sourceTree = "<group>"; };
-		703722D51ABF0C8600D679DF /* BDLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDLog.h; sourceTree = "<group>"; };
 		703722E81ABFB5F100D679DF /* ewm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ewm.png; sourceTree = "<group>"; };
 		703723321AC01B8000D679DF /* DrawViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DrawViewController.h; path = DrawDemo/DrawViewController.h; sourceTree = "<group>"; };
 		703723331AC01B8000D679DF /* DrawViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DrawViewController.m; path = DrawDemo/DrawViewController.m; sourceTree = "<group>"; };
@@ -141,6 +88,11 @@
 		70B7F86B1A2DEB5500051901 /* OCDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCDemoTests.m; sourceTree = "<group>"; };
 		70B7F8761A2E09C700051901 /* PopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopViewController.h; sourceTree = "<group>"; };
 		70B7F8771A2E09C700051901 /* PopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopViewController.m; sourceTree = "<group>"; };
+		70EBF7911AE09D48006520C7 /* ScrollDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScrollDemoViewController.h; path = ScrollViewDemo/ScrollDemoViewController.h; sourceTree = "<group>"; };
+		70EBF7921AE09D48006520C7 /* ScrollDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ScrollDemoViewController.m; path = ScrollViewDemo/ScrollDemoViewController.m; sourceTree = "<group>"; };
+		70EBF7931AE09D48006520C7 /* ScrollDemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ScrollDemoViewController.xib; path = ScrollViewDemo/ScrollDemoViewController.xib; sourceTree = "<group>"; };
+		70EBF7961AE0A2A5006520C7 /* segcontrol_sel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "segcontrol_sel@2x.png"; sourceTree = "<group>"; };
+		70F49B7E1AE0058700F528A6 /* 1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1@2x.png"; sourceTree = "<group>"; };
 		912693565877710CFA1F8600 /* libPods-CLIDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CLIDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADF09EB4E986DAF2EBD9F6F7 /* Pods-OCDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OCDemo/Pods-OCDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		EBD42FFE91A421423E0C1273 /* Pods-OCDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-OCDemo/Pods-OCDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -180,141 +132,6 @@
 			path = RACDemo;
 			sourceTree = "<group>";
 		};
-		703722A01ABF0C8600D679DF /* Crypto */ = {
-			isa = PBXGroup;
-			children = (
-				703722A11ABF0C8600D679DF /* Crypto */,
-				703722B01ABF0C8600D679DF /* Crypto-Prefix.pch */,
-				703722B11ABF0C8600D679DF /* External */,
-				703722B71ABF0C8600D679DF /* Utilities */,
-			);
-			name = Crypto;
-			path = "../../Downloads/iOS-Certificate--Key--and-Trust-Sample-Project-master 2/Crypto/Crypto";
-			sourceTree = "<group>";
-		};
-		703722A11ABF0C8600D679DF /* Crypto */ = {
-			isa = PBXGroup;
-			children = (
-				703722A21ABF0C8600D679DF /* BDAESCBC256Cryptor.h */,
-				703722A31ABF0C8600D679DF /* BDAESCBC256Cryptor.m */,
-				703722A41ABF0C8600D679DF /* BDAESCryptor.h */,
-				703722A51ABF0C8600D679DF /* BDAESCryptor.m */,
-				703722A61ABF0C8600D679DF /* BDCryptor.h */,
-				703722A71ABF0C8600D679DF /* BDCryptor.m */,
-				703722A81ABF0C8600D679DF /* BDCryptorError.h */,
-				703722A91ABF0C8600D679DF /* BDCryptorError.m */,
-				703722AA1ABF0C8600D679DF /* BDRSACryptor.h */,
-				703722AB1ABF0C8600D679DF /* BDRSACryptor.m */,
-				703722AC1ABF0C8600D679DF /* BDRSACryptorKeyPair.h */,
-				703722AD1ABF0C8600D679DF /* BDRSACryptorKeyPair.m */,
-				703722AE1ABF0C8600D679DF /* BDSHA512Cryptor.h */,
-				703722AF1ABF0C8600D679DF /* BDSHA512Cryptor.m */,
-			);
-			path = Crypto;
-			sourceTree = "<group>";
-		};
-		703722B11ABF0C8600D679DF /* External */ = {
-			isa = PBXGroup;
-			children = (
-				703722B21ABF0C8600D679DF /* Base64 */,
-			);
-			path = External;
-			sourceTree = "<group>";
-		};
-		703722B21ABF0C8600D679DF /* Base64 */ = {
-			isa = PBXGroup;
-			children = (
-				703722B31ABF0C8600D679DF /* NSData+Base64.h */,
-				703722B41ABF0C8600D679DF /* NSData+Base64.m */,
-				703722B51ABF0C8600D679DF /* NSString+Base64.h */,
-				703722B61ABF0C8600D679DF /* NSString+Base64.m */,
-			);
-			path = Base64;
-			sourceTree = "<group>";
-		};
-		703722B71ABF0C8600D679DF /* Utilities */ = {
-			isa = PBXGroup;
-			children = (
-				703722B81ABF0C8600D679DF /* General */,
-			);
-			path = Utilities;
-			sourceTree = "<group>";
-		};
-		703722B81ABF0C8600D679DF /* General */ = {
-			isa = PBXGroup;
-			children = (
-				703722B91ABF0C8600D679DF /* Categories */,
-				703722CD1ABF0C8600D679DF /* Error */,
-				703722D31ABF0C8600D679DF /* Macros */,
-			);
-			path = General;
-			sourceTree = "<group>";
-		};
-		703722B91ABF0C8600D679DF /* Categories */ = {
-			isa = PBXGroup;
-			children = (
-				703722BA1ABF0C8600D679DF /* JSON */,
-				703722CA1ABF0C8600D679DF /* String */,
-			);
-			path = Categories;
-			sourceTree = "<group>";
-		};
-		703722BA1ABF0C8600D679DF /* JSON */ = {
-			isa = PBXGroup;
-			children = (
-				703722BB1ABF0C8600D679DF /* BDJSON.h */,
-				703722BC1ABF0C8600D679DF /* BDJSONError.h */,
-				703722BD1ABF0C8600D679DF /* BDJSONError.m */,
-				703722BE1ABF0C8600D679DF /* NSArray+BDJSONSerialization.h */,
-				703722BF1ABF0C8600D679DF /* NSArray+BDJSONSerialization.m */,
-				703722C01ABF0C8600D679DF /* NSData+BDJSONSerialization.h */,
-				703722C11ABF0C8600D679DF /* NSData+BDJSONSerialization.m */,
-				703722C21ABF0C8600D679DF /* NSDictionary+BDJSONSerialization.h */,
-				703722C31ABF0C8600D679DF /* NSDictionary+BDJSONSerialization.m */,
-				703722C41ABF0C8600D679DF /* NSDictionary+BDParseJSON.h */,
-				703722C51ABF0C8600D679DF /* NSDictionary+BDParseJSON.m */,
-				703722C61ABF0C8600D679DF /* NSObject+BDJSONSerialization.h */,
-				703722C71ABF0C8600D679DF /* NSObject+BDJSONSerialization.m */,
-				703722C81ABF0C8600D679DF /* NSString+BDJSONSerialization.h */,
-				703722C91ABF0C8600D679DF /* NSString+BDJSONSerialization.m */,
-			);
-			path = JSON;
-			sourceTree = "<group>";
-		};
-		703722CA1ABF0C8600D679DF /* String */ = {
-			isa = PBXGroup;
-			children = (
-				703722CB1ABF0C8600D679DF /* NSString+BDUtilities.h */,
-				703722CC1ABF0C8600D679DF /* NSString+BDUtilities.m */,
-			);
-			path = String;
-			sourceTree = "<group>";
-		};
-		703722CD1ABF0C8600D679DF /* Error */ = {
-			isa = PBXGroup;
-			children = (
-				703722CE1ABF0C8600D679DF /* BDError.h */,
-				703722CF1ABF0C8600D679DF /* BDError.m */,
-			);
-			path = Error;
-			sourceTree = "<group>";
-		};
-		703722D31ABF0C8600D679DF /* Macros */ = {
-			isa = PBXGroup;
-			children = (
-				703722D41ABF0C8600D679DF /* Log */,
-			);
-			path = Macros;
-			sourceTree = "<group>";
-		};
-		703722D41ABF0C8600D679DF /* Log */ = {
-			isa = PBXGroup;
-			children = (
-				703722D51ABF0C8600D679DF /* BDLog.h */,
-			);
-			path = Log;
-			sourceTree = "<group>";
-		};
 		703723351AC01B8700D679DF /* DrawDemo */ = {
 			isa = PBXGroup;
 			children = (
@@ -342,7 +159,6 @@
 		70B7F8341A2DEB5500051901 = {
 			isa = PBXGroup;
 			children = (
-				703722A01ABF0C8600D679DF /* Crypto */,
 				70B7F8461A2DEB5500051901 /* OCDemo */,
 				70B7F8651A2DEB5500051901 /* OCDemoTests */,
 				70B7F83F1A2DEB5500051901 /* Frameworks */,
@@ -376,11 +192,14 @@
 		70B7F8461A2DEB5500051901 /* OCDemo */ = {
 			isa = PBXGroup;
 			children = (
+				70EBF7961AE0A2A5006520C7 /* segcontrol_sel@2x.png */,
+				70F49B7E1AE0058700F528A6 /* 1@2x.png */,
 				703722E81ABFB5F100D679DF /* ewm.png */,
 				70B7F84F1A2DEB5500051901 /* AppDelegate.h */,
 				70B7F8501A2DEB5500051901 /* AppDelegate.m */,
 				702BDD5C1A2E103200DE37FD /* RootViewController.h */,
 				702BDD5D1A2E103200DE37FD /* RootViewController.m */,
+				70EBF78B1AE099A3006520C7 /* ScrollViewDemo */,
 				704AA5C01A8F6A5C006559F3 /* ModelDemo */,
 				702C50EB1A2ED5BA0022C7D8 /* RACDemo */,
 				70B7F8751A2E09B300051901 /* POPDemo */,
@@ -430,6 +249,16 @@
 				5005DC72C341D22B3BF23F4D /* CustomeButton.h */,
 			);
 			path = POPDemo;
+			sourceTree = "<group>";
+		};
+		70EBF78B1AE099A3006520C7 /* ScrollViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				70EBF7911AE09D48006520C7 /* ScrollDemoViewController.h */,
+				70EBF7921AE09D48006520C7 /* ScrollDemoViewController.m */,
+				70EBF7931AE09D48006520C7 /* ScrollDemoViewController.xib */,
+			);
+			name = ScrollViewDemo;
 			sourceTree = "<group>";
 		};
 		CD17EC7EADE570133C005FCC /* Pods */ = {
@@ -520,8 +349,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70EBF7951AE09D48006520C7 /* ScrollDemoViewController.xib in Resources */,
+				70EBF7971AE0A2A5006520C7 /* segcontrol_sel@2x.png in Resources */,
 				70B7F8591A2DEB5500051901 /* Images.xcassets in Resources */,
 				70B7F84B1A2DEB5500051901 /* InfoPlist.strings in Resources */,
+				70F49B7F1AE0058700F528A6 /* 1@2x.png in Resources */,
 				70B7F8541A2DEB5500051901 /* Main.storyboard in Resources */,
 				703722E91ABFB5F100D679DF /* ewm.png in Resources */,
 			);
@@ -577,33 +409,16 @@
 			files = (
 				70B7F8781A2E09C700051901 /* PopViewController.m in Sources */,
 				703723411AC01C9100D679DF /* ViewController.m in Sources */,
-				703722D61ABF0C8600D679DF /* BDAESCBC256Cryptor.m in Sources */,
-				703722DF1ABF0C8600D679DF /* BDJSONError.m in Sources */,
 				70B7F8511A2DEB5500051901 /* AppDelegate.m in Sources */,
-				703722DD1ABF0C8600D679DF /* NSData+Base64.m in Sources */,
-				703722DA1ABF0C8600D679DF /* BDRSACryptor.m in Sources */,
-				703722D71ABF0C8600D679DF /* BDAESCryptor.m in Sources */,
-				703722DC1ABF0C8600D679DF /* BDSHA512Cryptor.m in Sources */,
 				703723401AC01C9100D679DF /* User.m in Sources */,
-				703722D91ABF0C8600D679DF /* BDCryptorError.m in Sources */,
 				702C50EE1A2ED5D40022C7D8 /* RACViewController.m in Sources */,
-				703722E41ABF0C8600D679DF /* NSObject+BDJSONSerialization.m in Sources */,
-				703722E31ABF0C8600D679DF /* NSDictionary+BDParseJSON.m in Sources */,
-				703722DE1ABF0C8600D679DF /* NSString+Base64.m in Sources */,
-				703722E21ABF0C8600D679DF /* NSDictionary+BDJSONSerialization.m in Sources */,
-				703722D81ABF0C8600D679DF /* BDCryptor.m in Sources */,
-				703722DB1ABF0C8600D679DF /* BDRSACryptorKeyPair.m in Sources */,
 				703723341AC01B8000D679DF /* DrawViewController.m in Sources */,
 				7037233F1AC01C9100D679DF /* StatusCell.m in Sources */,
-				703722E51ABF0C8600D679DF /* NSString+BDJSONSerialization.m in Sources */,
 				702BDD5E1A2E103200DE37FD /* RootViewController.m in Sources */,
+				70EBF7941AE09D48006520C7 /* ScrollDemoViewController.m in Sources */,
 				7037233E1AC01C9100D679DF /* Status.m in Sources */,
-				703722E01ABF0C8600D679DF /* NSArray+BDJSONSerialization.m in Sources */,
 				70B7F84D1A2DEB5500051901 /* main.m in Sources */,
-				703722E71ABF0C8600D679DF /* BDError.m in Sources */,
 				5005D374D969FC8DBF96DCCA /* CustomeButton.m in Sources */,
-				703722E61ABF0C8600D679DF /* NSString+BDUtilities.m in Sources */,
-				703722E11ABF0C8600D679DF /* NSData+BDJSONSerialization.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
