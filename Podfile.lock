@@ -20,7 +20,6 @@ PODS:
   - AFNetworking/UIKit (2.3.1):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
-  - ASProgressPopUpView (0.8)
   - CocoaLumberjack (2.0.0-rc):
     - CocoaLumberjack/Default (= 2.0.0-rc)
     - CocoaLumberjack/Extensions (= 2.0.0-rc)
@@ -29,34 +28,10 @@ PODS:
     - CocoaLumberjack/Core
   - CocoaLumberjack/Extensions (2.0.0-rc):
     - CocoaLumberjack/Default
-  - M13ProgressSuite (1.2.7)
   - Mantle (1.5.4):
     - Mantle/extobjc (= 1.5.4)
   - Mantle/extobjc (1.5.4)
   - Masonry (0.5.3)
-  - MIHCrypto (0.3.3):
-    - MIHCrypto/AES (= 0.3.3)
-    - MIHCrypto/Core (= 0.3.3)
-    - MIHCrypto/DES (= 0.3.3)
-    - MIHCrypto/Mathematics (= 0.3.3)
-    - MIHCrypto/MD5 (= 0.3.3)
-    - MIHCrypto/RSA (= 0.3.3)
-    - MIHCrypto/SHA (= 0.3.3)
-  - MIHCrypto/AES (0.3.3):
-    - MIHCrypto/Core
-  - MIHCrypto/Core (0.3.3):
-    - OpenSSL-Universal (~> 1.0.1.l)
-  - MIHCrypto/DES (0.3.3):
-    - MIHCrypto/Core
-  - MIHCrypto/Mathematics (0.3.3):
-    - MIHCrypto/Core
-  - MIHCrypto/MD5 (0.3.3):
-    - MIHCrypto/Core
-  - MIHCrypto/RSA (0.3.3):
-    - MIHCrypto/Core
-  - MIHCrypto/SHA (0.3.3):
-    - MIHCrypto/Core
-  - OpenSSL-Universal (1.0.1.l)
   - pop (1.0.7)
   - ReactiveCocoa (2.3.1):
     - ReactiveCocoa/UI (= 2.3.1)
@@ -68,25 +43,18 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (~> 2.3.1)
-  - ASProgressPopUpView (~> 0.8)
   - CocoaLumberjack (~> 2.0.0-beta)
-  - M13ProgressSuite (~> 1.2.7)
   - Mantle (~> 1.5.4)
   - Masonry (~> 0.5.3)
-  - MIHCrypto (~> 0.3.3)
   - pop (~> 1.0.6)
   - ReactiveCocoa (~> 2.3.1)
 
 SPEC CHECKSUMS:
-  AFNetworking: 6d7b76aa5d04c8c37daad3eef4b7e3f2a7620da3
-  ASProgressPopUpView: 7443b650bb54acb6557ab8495eaa6adea2183577
-  CocoaLumberjack: 6186e27827fc574b50b16c10102fcc591437f06c
-  M13ProgressSuite: 931cde7e91d474c04edb4b34517d75ca6d88ccf2
-  Mantle: d5fbaf30fbc58031223af13812c060e15934a1fe
-  Masonry: 35368c2ca9577ca87722c12fc52c4bad9b1c1516
-  MIHCrypto: 214c5985f051a2b5ba76536826a5d4ffa120667b
-  OpenSSL-Universal: ba0aeda135913e73f1dc785e13ef3204edf89b3e
-  pop: 2f14a1ea61339767af9e66741b418c831b3844df
-  ReactiveCocoa: dca75777b9d18990c8714a3a6f2149f29b4d1462
+  AFNetworking: 05b9f6e3aa5ac45bc383b4bb108ef338080a26c7
+  CocoaLumberjack: 04c5b9b7479dd4276a09700fcd6644423ea1751c
+  Mantle: 60acd0cd363e27d945bda0a6b8e90577112d28f3
+  Masonry: 9f515466afe48632562342a40a1c224071a1a022
+  pop: 628ffc631644601567ee8bfaaaea493ebd7d0923
+  ReactiveCocoa: 334468a83b2c5f669f7cfb9a084415ee23219b4f
 
-COCOAPODS: 0.35.0
+COCOAPODS: 0.36.3

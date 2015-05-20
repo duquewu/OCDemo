@@ -40,26 +40,14 @@
     //    };
     CGGradientRef gradient = CGGradientCreateWithColorComponents(rgb, colors, NULL, sizeof(colors)/sizeof(colors[0]));
     CGColorSpaceRelease(rgb);
-    CGContextDrawLinearGradient(context, gradient, self.view.center, CGPointApplyAffineTransform(self.view.center, CGAffineTransformMakeTranslation(0, 500)), 0);
-    //    CGContextDrawRadialGradient(context, gradient, self.view.center, 10, CGPointMake(320, self.view.center.y), 200, 0);
+//    CGContextDrawLinearGradient(context, gradient, self.view.center, CGPointApplyAffineTransform(self.view.center, CGAffineTransformMakeTranslation(0, 500)), 0);
+        CGContextDrawRadialGradient(context, gradient, self.view.center, 10, CGPointMake(320, self.view.center.y), 200, 0);
     
     _myImage = UIGraphicsGetImageFromCurrentImageContext();
-    
     UIView * v = [[UIImageView alloc]initWithImage:_myImage];
     [v setContentMode:UIViewContentModeBottomRight];
     [self.view addSubview:v];
-    //    UIImage * image = [UIImage imageNamed:@"1"];
-    UIImage * image = [[UIImage imageNamed:@"1"]resizableImageWithCapInsets:UIEdgeInsetsMake(40, 40, 40, 40)];
-    
-    
-    //    [self drawMe:0];
     
 }
 
--(void)drawMe:(double)progress {
-    CGImageRef image = CGImageRetain(_myImage.CGImage);
-    double height = CGImageGetHeight(image);
-    NSLog(@"%f",height);
-    CGImageRelease(image);
-}
 @end

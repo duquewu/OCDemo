@@ -9,8 +9,7 @@
 #import "RootViewController.h"
 #import "PopViewController.h"
 #import "RACViewController.h"
-#import "ScrollDemoViewController.h"
-#import <objc/runtime.h>
+#import "DrawViewController.h"
 @interface RootViewController ()
 {
     NSArray * _demosArr;
@@ -18,26 +17,18 @@
 @end
 
 @implementation RootViewController
-
+#pragma mark- View Lifecycle
 - (void)viewDidLoad {
     [super viewDidLoad];
-    UITabBarController * tab = [[UITabBarController alloc]init];
-    tab.tabBar.translucent=NO;
-    [tab addChildViewController:[[ScrollDemoViewController alloc]initWithNibName:NSStringFromClass([ScrollDemoViewController class]) bundle:nil]];
     _demosArr = @[
                   [PopViewController new],
                   [RACViewController new],
-                  tab
+                  [DrawViewController new],
                   ];
     
 }
 
-#pragma mark - Table view data source
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    // Return the number of sections.
-    return 1;
-}
+#pragma mark- Table view data source
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
@@ -47,13 +38,17 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
-    const char*s = object_getClassName(_demosArr[indexPath.row]);
-    cell.textLabel.text = [NSString stringWithCString:s encoding:NSUTF8StringEncoding];
+//    const char*s = object_getClassName(_demosArr[indexPath.row]);
+       NSString* className = NSStringFromClass([_demosArr[indexPath.row] class]);
+//    cell.textLabel.text = [NSString stringWithCString:s encoding:NSUTF8StringEncoding];
+    cell.textLabel.text = className;
     return cell;
 }
--(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
+#pragma mark- Table View Delegate
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     UIViewController * viewController = _demosArr[indexPath.row];
+    viewController.hidesBottomBarWhenPushed = YES;
+    viewController.navigationController.navigationBar.translucent=NO;
     [self.navigationController pushViewController:viewController animated:YES];
 }
 
