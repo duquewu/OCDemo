@@ -8,6 +8,7 @@ pod 'ReactiveCocoa', '~> 2.3.1'
 pod 'Masonry', '~> 0.5.3'
 pod 'pop', '~> 1.0.6'
 pod 'Mantle', '~> 1.5.4'
+pod 'JHChainableAnimations', '~> 1.2.0'
 end
 
 target 'OCDemoTests' do

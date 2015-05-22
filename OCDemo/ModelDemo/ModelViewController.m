@@ -6,34 +6,39 @@
 //  Copyright (c) 2015年 信通惠德. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "ModelViewController.h"
 #import "Status.h"
 #import "StatusCell.h"
 #import <AFNetworking/AFNetworking.h>
 #import <Masonry/Masonry.h>
 #import <ReactiveCocoa/ReactiveCocoa.h>
-@interface ViewController ()
+@interface ModelViewController ()
 @property(nonatomic,copy)NSArray * statuses;
+-(NSString*)idStr;
 @end
 #import "StatusCell.h"
 //TableView类目
-@interface ViewController (UITableView)<UITableViewDataSource,UITableViewDelegate>
-
+@interface ModelViewController (UITableView)<UITableViewDataSource,UITableViewDelegate>
 @end
 
-@implementation ViewController
-
+@implementation ModelViewController
+-(NSString*)idStr {
+    return NSStringFromClass([StatusCell class]);
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSLog(@"%@",NSStringFromCGRect(self.view.frame));
-    NSLog(@"%@",NSStringFromCGRect(self.tableView.frame));
-
+    self.tableView = [[UITableView alloc]initWithFrame:self.view.bounds];
+    [self.tableView registerClass:NSClassFromString(self.idStr) forCellReuseIdentifier:self.idStr];
+    ;
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
+    [self.view addSubview:self.tableView];
     AFHTTPRequestOperationManager * manager =  [AFHTTPRequestOperationManager manager];
     [manager GET:@"https://api.weibo.com/2/statuses/public_timeline.json" parameters:@{@"access_token":@"2.00evHF2Cpsho5Da79c7354e9rt9rRB"} success:^(AFHTTPRequestOperation *operation, id responseObject) {
         self.statuses = [MTLJSONAdapter modelsOfClass:Status.class fromJSONArray:responseObject[@"statuses"] error:nil];
         [self.tableView reloadData];
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        
+        NSLog(@"%@",error);
     }];
    
     
@@ -43,7 +48,7 @@
 
 #pragma mark TableView 类目
 
-@implementation ViewController (UITableView)
+@implementation ModelViewController (UITableView)
 -(CGFloat)heighForRowAtIndex:(NSInteger)index {
     
     return 40;
@@ -60,7 +65,7 @@
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView
         cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    StatusCell * cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
+    StatusCell * cell = [tableView dequeueReusableCellWithIdentifier:self.idStr forIndexPath:indexPath];
     Status *s = self.statuses[indexPath.row];
     [cell setStatus:s];
     

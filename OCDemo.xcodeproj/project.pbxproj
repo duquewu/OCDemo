@@ -15,7 +15,8 @@
 		7037233E1AC01C9100D679DF /* Status.m in Sources */ = {isa = PBXBuildFile; fileRef = 703723371AC01C9100D679DF /* Status.m */; };
 		7037233F1AC01C9100D679DF /* StatusCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 703723391AC01C9100D679DF /* StatusCell.m */; };
 		703723401AC01C9100D679DF /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 7037233B1AC01C9100D679DF /* User.m */; };
-		703723411AC01C9100D679DF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7037233D1AC01C9100D679DF /* ViewController.m */; };
+		703723411AC01C9100D679DF /* ModelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7037233D1AC01C9100D679DF /* ModelViewController.m */; };
+		70B77C171B0F27DD00D7657D /* BoundsDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70B77C161B0F27DD00D7657D /* BoundsDemoViewController.m */; };
 		70B7F8411A2DEB5500051901 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70B7F8401A2DEB5500051901 /* Foundation.framework */; };
 		70B7F8431A2DEB5500051901 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70B7F8421A2DEB5500051901 /* CoreGraphics.framework */; };
 		70B7F8451A2DEB5500051901 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70B7F8441A2DEB5500051901 /* UIKit.framework */; };
@@ -29,7 +30,10 @@
 		70B7F86A1A2DEB5500051901 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 70B7F8681A2DEB5500051901 /* InfoPlist.strings */; };
 		70B7F86C1A2DEB5500051901 /* OCDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 70B7F86B1A2DEB5500051901 /* OCDemoTests.m */; };
 		70B7F8781A2E09C700051901 /* PopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70B7F8771A2E09C700051901 /* PopViewController.m */; };
+		70DB98391B0EDB8B00234E68 /* MasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70DB98381B0EDB8B00234E68 /* MasViewController.m */; };
 		70EBF7971AE0A2A5006520C7 /* segcontrol_sel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 70EBF7961AE0A2A5006520C7 /* segcontrol_sel@2x.png */; };
+		70F8659F1B0DC4C900CF50BA /* CADemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F8659E1B0DC4C900CF50BA /* CADemoViewController.m */; };
+		70F865A21B0DDA9500CF50BA /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F865A11B0DDA9500CF50BA /* Person.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,8 +64,10 @@
 		703723391AC01C9100D679DF /* StatusCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatusCell.m; sourceTree = "<group>"; };
 		7037233A1AC01C9100D679DF /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		7037233B1AC01C9100D679DF /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
-		7037233C1AC01C9100D679DF /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		7037233D1AC01C9100D679DF /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		7037233C1AC01C9100D679DF /* ModelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelViewController.h; sourceTree = "<group>"; };
+		7037233D1AC01C9100D679DF /* ModelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelViewController.m; sourceTree = "<group>"; };
+		70B77C151B0F27DD00D7657D /* BoundsDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BoundsDemoViewController.h; path = BoundsDemo/BoundsDemoViewController.h; sourceTree = "<group>"; };
+		70B77C161B0F27DD00D7657D /* BoundsDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BoundsDemoViewController.m; path = BoundsDemo/BoundsDemoViewController.m; sourceTree = "<group>"; };
 		70B7F83D1A2DEB5500051901 /* OCDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70B7F8401A2DEB5500051901 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		70B7F8421A2DEB5500051901 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -80,7 +86,13 @@
 		70B7F86B1A2DEB5500051901 /* OCDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCDemoTests.m; sourceTree = "<group>"; };
 		70B7F8761A2E09C700051901 /* PopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopViewController.h; sourceTree = "<group>"; };
 		70B7F8771A2E09C700051901 /* PopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopViewController.m; sourceTree = "<group>"; };
+		70DB98371B0EDB8B00234E68 /* MasViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MasViewController.h; path = MasDemo/MasViewController.h; sourceTree = "<group>"; };
+		70DB98381B0EDB8B00234E68 /* MasViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MasViewController.m; path = MasDemo/MasViewController.m; sourceTree = "<group>"; };
 		70EBF7961AE0A2A5006520C7 /* segcontrol_sel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "segcontrol_sel@2x.png"; sourceTree = "<group>"; };
+		70F8659D1B0DC4C800CF50BA /* CADemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADemoViewController.h; sourceTree = "<group>"; };
+		70F8659E1B0DC4C900CF50BA /* CADemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CADemoViewController.m; sourceTree = "<group>"; };
+		70F865A01B0DDA9500CF50BA /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		70F865A11B0DDA9500CF50BA /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		912693565877710CFA1F8600 /* libPods-CLIDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CLIDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADF09EB4E986DAF2EBD9F6F7 /* Pods-OCDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OCDemo/Pods-OCDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		EBD42FFE91A421423E0C1273 /* Pods-OCDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-OCDemo/Pods-OCDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -138,10 +150,19 @@
 				703723391AC01C9100D679DF /* StatusCell.m */,
 				7037233A1AC01C9100D679DF /* User.h */,
 				7037233B1AC01C9100D679DF /* User.m */,
-				7037233C1AC01C9100D679DF /* ViewController.h */,
-				7037233D1AC01C9100D679DF /* ViewController.m */,
+				7037233C1AC01C9100D679DF /* ModelViewController.h */,
+				7037233D1AC01C9100D679DF /* ModelViewController.m */,
 			);
 			path = ModelDemo;
+			sourceTree = "<group>";
+		};
+		70B77C191B0F27E900D7657D /* BoundsDemo */ = {
+			isa = PBXGroup;
+			children = (
+				70B77C151B0F27DD00D7657D /* BoundsDemoViewController.h */,
+				70B77C161B0F27DD00D7657D /* BoundsDemoViewController.m */,
+			);
+			name = BoundsDemo;
 			sourceTree = "<group>";
 		};
 		70B7F8341A2DEB5500051901 = {
@@ -185,6 +206,11 @@
 				70B7F8501A2DEB5500051901 /* AppDelegate.m */,
 				702BDD5C1A2E103200DE37FD /* RootViewController.h */,
 				702BDD5D1A2E103200DE37FD /* RootViewController.m */,
+				70F865A01B0DDA9500CF50BA /* Person.h */,
+				70F865A11B0DDA9500CF50BA /* Person.m */,
+				70B77C191B0F27E900D7657D /* BoundsDemo */,
+				70DB983A1B0EDB9000234E68 /* MasDemo */,
+				70F8659C1B0DC4C800CF50BA /* CADemo */,
 				704AA5C01A8F6A5C006559F3 /* ModelDemo */,
 				702C50EB1A2ED5BA0022C7D8 /* RACDemo */,
 				70B7F8751A2E09B300051901 /* POPDemo */,
@@ -233,6 +259,24 @@
 				5005DC72C341D22B3BF23F4D /* CustomeButton.h */,
 			);
 			path = POPDemo;
+			sourceTree = "<group>";
+		};
+		70DB983A1B0EDB9000234E68 /* MasDemo */ = {
+			isa = PBXGroup;
+			children = (
+				70DB98371B0EDB8B00234E68 /* MasViewController.h */,
+				70DB98381B0EDB8B00234E68 /* MasViewController.m */,
+			);
+			name = MasDemo;
+			sourceTree = "<group>";
+		};
+		70F8659C1B0DC4C800CF50BA /* CADemo */ = {
+			isa = PBXGroup;
+			children = (
+				70F8659D1B0DC4C800CF50BA /* CADemoViewController.h */,
+				70F8659E1B0DC4C900CF50BA /* CADemoViewController.m */,
+			);
+			path = CADemo;
 			sourceTree = "<group>";
 		};
 		CD17EC7EADE570133C005FCC /* Pods */ = {
@@ -381,14 +425,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				70B7F8781A2E09C700051901 /* PopViewController.m in Sources */,
-				703723411AC01C9100D679DF /* ViewController.m in Sources */,
+				703723411AC01C9100D679DF /* ModelViewController.m in Sources */,
 				70B7F8511A2DEB5500051901 /* AppDelegate.m in Sources */,
 				703723401AC01C9100D679DF /* User.m in Sources */,
+				70DB98391B0EDB8B00234E68 /* MasViewController.m in Sources */,
 				702C50EE1A2ED5D40022C7D8 /* RACViewController.m in Sources */,
 				703723341AC01B8000D679DF /* DrawViewController.m in Sources */,
 				7037233F1AC01C9100D679DF /* StatusCell.m in Sources */,
 				702BDD5E1A2E103200DE37FD /* RootViewController.m in Sources */,
 				7037233E1AC01C9100D679DF /* Status.m in Sources */,
+				70F865A21B0DDA9500CF50BA /* Person.m in Sources */,
+				70B77C171B0F27DD00D7657D /* BoundsDemoViewController.m in Sources */,
+				70F8659F1B0DC4C900CF50BA /* CADemoViewController.m in Sources */,
 				70B7F84D1A2DEB5500051901 /* main.m in Sources */,
 				5005D374D969FC8DBF96DCCA /* CustomeButton.m in Sources */,
 			);

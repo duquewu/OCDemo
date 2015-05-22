@@ -19,7 +19,6 @@
 }
 - (void) add {
     [self addTarget:self action:@selector(scale) forControlEvents:UIControlEventTouchUpInside];
-
 }
 -(void)scale {
     POPSpringAnimation *animation = [POPSpringAnimation animationWithPropertyNamed:kPOPLayerScaleXY];

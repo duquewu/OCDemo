@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-@property (weak, nonatomic)IBOutlet UITableView *tableView;
+@interface ModelViewController : UIViewController
+@property (strong, nonatomic) UITableView *tableView;
 
 
 @end

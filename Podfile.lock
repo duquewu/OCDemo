@@ -28,6 +28,7 @@ PODS:
     - CocoaLumberjack/Core
   - CocoaLumberjack/Extensions (2.0.0-rc):
     - CocoaLumberjack/Default
+  - JHChainableAnimations (1.2.0)
   - Mantle (1.5.4):
     - Mantle/extobjc (= 1.5.4)
   - Mantle/extobjc (1.5.4)
@@ -44,6 +45,7 @@ PODS:
 DEPENDENCIES:
   - AFNetworking (~> 2.3.1)
   - CocoaLumberjack (~> 2.0.0-beta)
+  - JHChainableAnimations (~> 1.2.0)
   - Mantle (~> 1.5.4)
   - Masonry (~> 0.5.3)
   - pop (~> 1.0.6)
@@ -52,6 +54,7 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   AFNetworking: 05b9f6e3aa5ac45bc383b4bb108ef338080a26c7
   CocoaLumberjack: 04c5b9b7479dd4276a09700fcd6644423ea1751c
+  JHChainableAnimations: fb5620f6b36f241d039ee924b0ec4db8edefa27f
   Mantle: 60acd0cd363e27d945bda0a6b8e90577112d28f3
   Masonry: 9f515466afe48632562342a40a1c224071a1a022
   pop: 628ffc631644601567ee8bfaaaea493ebd7d0923

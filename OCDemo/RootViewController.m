@@ -10,6 +10,10 @@
 #import "PopViewController.h"
 #import "RACViewController.h"
 #import "DrawViewController.h"
+#import "ModelViewController.h"
+#import "CADemoViewController.h"
+#import "MasViewController.h"
+#import "BoundsDemoViewController.h"
 @interface RootViewController ()
 {
     NSArray * _demosArr;
@@ -21,10 +25,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     _demosArr = @[
-                  [PopViewController new],
-                  [RACViewController new],
-                  [DrawViewController new],
+                  [PopViewController class],
+                  [RACViewController class],
+                  [DrawViewController class],
+                  [ModelViewController class],
+                  [CADemoViewController class],
+                  [MasViewController class],
+                  [BoundsDemoViewController class],
                   ];
+    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
     
 }
 
@@ -38,17 +47,15 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
-//    const char*s = object_getClassName(_demosArr[indexPath.row]);
-       NSString* className = NSStringFromClass([_demosArr[indexPath.row] class]);
-//    cell.textLabel.text = [NSString stringWithCString:s encoding:NSUTF8StringEncoding];
+    NSString* className = NSStringFromClass([_demosArr[indexPath.row] class]);
     cell.textLabel.text = className;
     return cell;
 }
 #pragma mark- Table View Delegate
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    UIViewController * viewController = _demosArr[indexPath.row];
-    viewController.hidesBottomBarWhenPushed = YES;
-    viewController.navigationController.navigationBar.translucent=NO;
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    UIViewController * viewController = [_demosArr[indexPath.row] new];
+    
     [self.navigationController pushViewController:viewController animated:YES];
 }
 

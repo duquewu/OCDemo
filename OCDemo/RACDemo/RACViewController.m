@@ -19,9 +19,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    
-
 
 //    //信号过滤
 //    RACSignal * signal =  RACObserve(self, name) ;
