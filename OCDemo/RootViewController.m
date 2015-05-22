@@ -47,7 +47,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
-    NSString* className = NSStringFromClass([_demosArr[indexPath.row] class]);
+    NSString* className = NSStringFromClass(_demosArr[indexPath.row]);
     cell.textLabel.text = className;
     return cell;
 }
@@ -55,7 +55,6 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     UIViewController * viewController = [_demosArr[indexPath.row] new];
-    
     [self.navigationController pushViewController:viewController animated:YES];
 }
 
