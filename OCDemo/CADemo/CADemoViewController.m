@@ -7,23 +7,23 @@
 //
 
 #import "CADemoViewController.h"
-
+#import "ClockView.h"
 @interface CADemoViewController ()
-
+@property (nonatomic,strong) ClockView * v1;
 @end
 
 @implementation CADemoViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    CALayer * layer1 = [[CALayer alloc]init];
-//    layer1.backgroundColor = CGColorCreateCopyWithAlpha([UIColor redColor].CGColor, 0.2);
-//    layer1.frame = CGRectMake(0, 0, 100, 100);
-//    [self.view.layer addSublayer:layer1];
-    UIView * v1 = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 100, 100)];
-    v1.backgroundColor = [UIColor redColor];
-    [self.view addSubview:v1];
+    _v1 = [ClockView new];
+    _v1.bounds = CGRectMake(0, 0, 200, 200);
+    _v1.center = self.view.center;
+    [self.view addSubview:_v1];
+    [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(doTimer) userInfo:nil repeats:YES];
 }
-
+-(void)doTimer {
+    _v1.dateTime = [NSDate date];
+}
 
 @end

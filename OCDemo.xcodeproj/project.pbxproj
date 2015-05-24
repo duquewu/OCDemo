@@ -16,6 +16,7 @@
 		7037233F1AC01C9100D679DF /* StatusCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 703723391AC01C9100D679DF /* StatusCell.m */; };
 		703723401AC01C9100D679DF /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 7037233B1AC01C9100D679DF /* User.m */; };
 		703723411AC01C9100D679DF /* ModelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7037233D1AC01C9100D679DF /* ModelViewController.m */; };
+		707919121B1236D700C3C58F /* ClockView.m in Sources */ = {isa = PBXBuildFile; fileRef = 707919111B1236D700C3C58F /* ClockView.m */; };
 		70B77C171B0F27DD00D7657D /* BoundsDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70B77C161B0F27DD00D7657D /* BoundsDemoViewController.m */; };
 		70B7F8411A2DEB5500051901 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70B7F8401A2DEB5500051901 /* Foundation.framework */; };
 		70B7F8431A2DEB5500051901 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70B7F8421A2DEB5500051901 /* CoreGraphics.framework */; };
@@ -66,6 +67,8 @@
 		7037233B1AC01C9100D679DF /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		7037233C1AC01C9100D679DF /* ModelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelViewController.h; sourceTree = "<group>"; };
 		7037233D1AC01C9100D679DF /* ModelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelViewController.m; sourceTree = "<group>"; };
+		707919101B1236D700C3C58F /* ClockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClockView.h; sourceTree = "<group>"; };
+		707919111B1236D700C3C58F /* ClockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClockView.m; sourceTree = "<group>"; };
 		70B77C151B0F27DD00D7657D /* BoundsDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BoundsDemoViewController.h; path = BoundsDemo/BoundsDemoViewController.h; sourceTree = "<group>"; };
 		70B77C161B0F27DD00D7657D /* BoundsDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BoundsDemoViewController.m; path = BoundsDemo/BoundsDemoViewController.m; sourceTree = "<group>"; };
 		70B7F83D1A2DEB5500051901 /* OCDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -275,6 +278,8 @@
 			children = (
 				70F8659D1B0DC4C800CF50BA /* CADemoViewController.h */,
 				70F8659E1B0DC4C900CF50BA /* CADemoViewController.m */,
+				707919101B1236D700C3C58F /* ClockView.h */,
+				707919111B1236D700C3C58F /* ClockView.m */,
 			);
 			path = CADemo;
 			sourceTree = "<group>";
@@ -437,6 +442,7 @@
 				70F865A21B0DDA9500CF50BA /* Person.m in Sources */,
 				70B77C171B0F27DD00D7657D /* BoundsDemoViewController.m in Sources */,
 				70F8659F1B0DC4C900CF50BA /* CADemoViewController.m in Sources */,
+				707919121B1236D700C3C58F /* ClockView.m in Sources */,
 				70B7F84D1A2DEB5500051901 /* main.m in Sources */,
 				5005D374D969FC8DBF96DCCA /* CustomeButton.m in Sources */,
 			);
