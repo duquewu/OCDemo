@@ -16,6 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
     UIView * v1 = [[UIView alloc]initWithFrame:self.view.frame];
     v1.tag = 101;
     v1.backgroundColor = [UIColor yellowColor];
