@@ -17,6 +17,9 @@
 		703723401AC01C9100D679DF /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 7037233B1AC01C9100D679DF /* User.m */; };
 		703723411AC01C9100D679DF /* ModelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7037233D1AC01C9100D679DF /* ModelViewController.m */; };
 		707919121B1236D700C3C58F /* ClockView.m in Sources */ = {isa = PBXBuildFile; fileRef = 707919111B1236D700C3C58F /* ClockView.m */; };
+		70A305881B141588005F61A3 /* ShimmerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 70A305871B141588005F61A3 /* ShimmerView.m */; };
+		70A3058E1B1423B9005F61A3 /* ARCGPathFromString.m in Sources */ = {isa = PBXBuildFile; fileRef = 70A3058B1B1423B9005F61A3 /* ARCGPathFromString.m */; };
+		70A3058F1B1423B9005F61A3 /* UIBezierPath+TextPaths.m in Sources */ = {isa = PBXBuildFile; fileRef = 70A3058D1B1423B9005F61A3 /* UIBezierPath+TextPaths.m */; };
 		70B77C171B0F27DD00D7657D /* BoundsDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70B77C161B0F27DD00D7657D /* BoundsDemoViewController.m */; };
 		70B7F8411A2DEB5500051901 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70B7F8401A2DEB5500051901 /* Foundation.framework */; };
 		70B7F8431A2DEB5500051901 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70B7F8421A2DEB5500051901 /* CoreGraphics.framework */; };
@@ -34,7 +37,6 @@
 		70DB98391B0EDB8B00234E68 /* MasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70DB98381B0EDB8B00234E68 /* MasViewController.m */; };
 		70EBF7971AE0A2A5006520C7 /* segcontrol_sel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 70EBF7961AE0A2A5006520C7 /* segcontrol_sel@2x.png */; };
 		70F8659F1B0DC4C900CF50BA /* CADemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F8659E1B0DC4C900CF50BA /* CADemoViewController.m */; };
-		70F865A21B0DDA9500CF50BA /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F865A11B0DDA9500CF50BA /* Person.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,19 @@
 			remoteInfo = OCDemo;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		70F253FA1B1855540047AC06 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		4C135714F3727A97783DF0DE /* libPods-OCDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OCDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,6 +84,12 @@
 		7037233D1AC01C9100D679DF /* ModelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelViewController.m; sourceTree = "<group>"; };
 		707919101B1236D700C3C58F /* ClockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClockView.h; sourceTree = "<group>"; };
 		707919111B1236D700C3C58F /* ClockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClockView.m; sourceTree = "<group>"; };
+		70A305861B141588005F61A3 /* ShimmerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShimmerView.h; sourceTree = "<group>"; };
+		70A305871B141588005F61A3 /* ShimmerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShimmerView.m; sourceTree = "<group>"; };
+		70A3058A1B1423B9005F61A3 /* ARCGPathFromString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARCGPathFromString.h; sourceTree = "<group>"; };
+		70A3058B1B1423B9005F61A3 /* ARCGPathFromString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARCGPathFromString.m; sourceTree = "<group>"; };
+		70A3058C1B1423B9005F61A3 /* UIBezierPath+TextPaths.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBezierPath+TextPaths.h"; sourceTree = "<group>"; };
+		70A3058D1B1423B9005F61A3 /* UIBezierPath+TextPaths.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBezierPath+TextPaths.m"; sourceTree = "<group>"; };
 		70B77C151B0F27DD00D7657D /* BoundsDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BoundsDemoViewController.h; path = BoundsDemo/BoundsDemoViewController.h; sourceTree = "<group>"; };
 		70B77C161B0F27DD00D7657D /* BoundsDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BoundsDemoViewController.m; path = BoundsDemo/BoundsDemoViewController.m; sourceTree = "<group>"; };
 		70B7F83D1A2DEB5500051901 /* OCDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,8 +115,6 @@
 		70EBF7961AE0A2A5006520C7 /* segcontrol_sel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "segcontrol_sel@2x.png"; sourceTree = "<group>"; };
 		70F8659D1B0DC4C800CF50BA /* CADemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADemoViewController.h; sourceTree = "<group>"; };
 		70F8659E1B0DC4C900CF50BA /* CADemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CADemoViewController.m; sourceTree = "<group>"; };
-		70F865A01B0DDA9500CF50BA /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
-		70F865A11B0DDA9500CF50BA /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		912693565877710CFA1F8600 /* libPods-CLIDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CLIDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADF09EB4E986DAF2EBD9F6F7 /* Pods-OCDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OCDemo/Pods-OCDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		EBD42FFE91A421423E0C1273 /* Pods-OCDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-OCDemo/Pods-OCDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -159,6 +178,17 @@
 			path = ModelDemo;
 			sourceTree = "<group>";
 		};
+		70A305891B1423B9005F61A3 /* ARCGPathFromString */ = {
+			isa = PBXGroup;
+			children = (
+				70A3058A1B1423B9005F61A3 /* ARCGPathFromString.h */,
+				70A3058B1B1423B9005F61A3 /* ARCGPathFromString.m */,
+				70A3058C1B1423B9005F61A3 /* UIBezierPath+TextPaths.h */,
+				70A3058D1B1423B9005F61A3 /* UIBezierPath+TextPaths.m */,
+			);
+			path = ARCGPathFromString;
+			sourceTree = "<group>";
+		};
 		70B77C191B0F27E900D7657D /* BoundsDemo */ = {
 			isa = PBXGroup;
 			children = (
@@ -209,8 +239,7 @@
 				70B7F8501A2DEB5500051901 /* AppDelegate.m */,
 				702BDD5C1A2E103200DE37FD /* RootViewController.h */,
 				702BDD5D1A2E103200DE37FD /* RootViewController.m */,
-				70F865A01B0DDA9500CF50BA /* Person.h */,
-				70F865A11B0DDA9500CF50BA /* Person.m */,
+				70A305891B1423B9005F61A3 /* ARCGPathFromString */,
 				70B77C191B0F27E900D7657D /* BoundsDemo */,
 				70DB983A1B0EDB9000234E68 /* MasDemo */,
 				70F8659C1B0DC4C800CF50BA /* CADemo */,
@@ -280,6 +309,8 @@
 				70F8659E1B0DC4C900CF50BA /* CADemoViewController.m */,
 				707919101B1236D700C3C58F /* ClockView.h */,
 				707919111B1236D700C3C58F /* ClockView.m */,
+				70A305861B141588005F61A3 /* ShimmerView.h */,
+				70A305871B141588005F61A3 /* ShimmerView.m */,
 			);
 			path = CADemo;
 			sourceTree = "<group>";
@@ -305,6 +336,7 @@
 				70B7F83A1A2DEB5500051901 /* Frameworks */,
 				70B7F83B1A2DEB5500051901 /* Resources */,
 				C4D7378EFCA9E8BA33075BCE /* Copy Pods Resources */,
+				70F253FA1B1855540047AC06 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
@@ -436,13 +468,15 @@
 				70DB98391B0EDB8B00234E68 /* MasViewController.m in Sources */,
 				702C50EE1A2ED5D40022C7D8 /* RACViewController.m in Sources */,
 				703723341AC01B8000D679DF /* DrawViewController.m in Sources */,
+				70A3058F1B1423B9005F61A3 /* UIBezierPath+TextPaths.m in Sources */,
 				7037233F1AC01C9100D679DF /* StatusCell.m in Sources */,
+				70A305881B141588005F61A3 /* ShimmerView.m in Sources */,
 				702BDD5E1A2E103200DE37FD /* RootViewController.m in Sources */,
 				7037233E1AC01C9100D679DF /* Status.m in Sources */,
-				70F865A21B0DDA9500CF50BA /* Person.m in Sources */,
 				70B77C171B0F27DD00D7657D /* BoundsDemoViewController.m in Sources */,
 				70F8659F1B0DC4C900CF50BA /* CADemoViewController.m in Sources */,
 				707919121B1236D700C3C58F /* ClockView.m in Sources */,
+				70A3058E1B1423B9005F61A3 /* ARCGPathFromString.m in Sources */,
 				70B7F84D1A2DEB5500051901 /* main.m in Sources */,
 				5005D374D969FC8DBF96DCCA /* CustomeButton.m in Sources */,
 			);
@@ -521,7 +555,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -554,7 +588,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -570,7 +604,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OCDemo/OCDemo-Prefix.pch";
 				INFOPLIST_FILE = "OCDemo/OCDemo-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "9a44e38c-556a-4f04-9fbf-558e1d80f20b";
 				WRAPPER_EXTENSION = app;
@@ -587,7 +621,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OCDemo/OCDemo-Prefix.pch";
 				INFOPLIST_FILE = "OCDemo/OCDemo-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "9a44e38c-556a-4f04-9fbf-558e1d80f20b";
 				WRAPPER_EXTENSION = app;

@@ -14,8 +14,7 @@
 #import "CADemoViewController.h"
 #import "MasViewController.h"
 #import "BoundsDemoViewController.h"
-@interface RootViewController ()
-{
+@interface RootViewController () {
     NSArray * _demosArr;
 }
 @end
@@ -55,6 +54,7 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     UIViewController * viewController = [_demosArr[indexPath.row] new];
+    viewController.view.backgroundColor = [UIColor whiteColor];
     [self.navigationController pushViewController:viewController animated:YES];
 }
 
