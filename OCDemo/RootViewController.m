@@ -14,6 +14,7 @@
 #import "CADemoViewController.h"
 #import "MasViewController.h"
 #import "BoundsDemoViewController.h"
+#import "ConcurrentDemoViewController.h"
 @interface RootViewController () {
     NSArray * _demosArr;
 }
@@ -31,6 +32,7 @@
                   [CADemoViewController class],
                   [MasViewController class],
                   [BoundsDemoViewController class],
+                  [ConcurrentDemoViewController class],
                   ];
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
     

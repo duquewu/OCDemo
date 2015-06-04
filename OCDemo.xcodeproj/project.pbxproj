@@ -35,6 +35,7 @@
 		70B7F86C1A2DEB5500051901 /* OCDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 70B7F86B1A2DEB5500051901 /* OCDemoTests.m */; };
 		70B7F8781A2E09C700051901 /* PopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70B7F8771A2E09C700051901 /* PopViewController.m */; };
 		70DB98391B0EDB8B00234E68 /* MasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70DB98381B0EDB8B00234E68 /* MasViewController.m */; };
+		70E060CA1B2042FF005FA3E6 /* ConcurrentDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E060C91B2042FF005FA3E6 /* ConcurrentDemoViewController.m */; };
 		70EBF7971AE0A2A5006520C7 /* segcontrol_sel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 70EBF7961AE0A2A5006520C7 /* segcontrol_sel@2x.png */; };
 		70F8659F1B0DC4C900CF50BA /* CADemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F8659E1B0DC4C900CF50BA /* CADemoViewController.m */; };
 /* End PBXBuildFile section */
@@ -112,6 +113,8 @@
 		70B7F8771A2E09C700051901 /* PopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopViewController.m; sourceTree = "<group>"; };
 		70DB98371B0EDB8B00234E68 /* MasViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MasViewController.h; path = MasDemo/MasViewController.h; sourceTree = "<group>"; };
 		70DB98381B0EDB8B00234E68 /* MasViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MasViewController.m; path = MasDemo/MasViewController.m; sourceTree = "<group>"; };
+		70E060C81B2042FF005FA3E6 /* ConcurrentDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ConcurrentDemoViewController.h; path = ConcurrentDemo/ConcurrentDemoViewController.h; sourceTree = "<group>"; };
+		70E060C91B2042FF005FA3E6 /* ConcurrentDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ConcurrentDemoViewController.m; path = ConcurrentDemo/ConcurrentDemoViewController.m; sourceTree = "<group>"; };
 		70EBF7961AE0A2A5006520C7 /* segcontrol_sel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "segcontrol_sel@2x.png"; sourceTree = "<group>"; };
 		70F8659D1B0DC4C800CF50BA /* CADemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADemoViewController.h; sourceTree = "<group>"; };
 		70F8659E1B0DC4C900CF50BA /* CADemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CADemoViewController.m; sourceTree = "<group>"; };
@@ -239,6 +242,7 @@
 				70B7F8501A2DEB5500051901 /* AppDelegate.m */,
 				702BDD5C1A2E103200DE37FD /* RootViewController.h */,
 				702BDD5D1A2E103200DE37FD /* RootViewController.m */,
+				70E060CB1B204304005FA3E6 /* ConcurrentDemo */,
 				70A305891B1423B9005F61A3 /* ARCGPathFromString */,
 				70B77C191B0F27E900D7657D /* BoundsDemo */,
 				70DB983A1B0EDB9000234E68 /* MasDemo */,
@@ -300,6 +304,15 @@
 				70DB98381B0EDB8B00234E68 /* MasViewController.m */,
 			);
 			name = MasDemo;
+			sourceTree = "<group>";
+		};
+		70E060CB1B204304005FA3E6 /* ConcurrentDemo */ = {
+			isa = PBXGroup;
+			children = (
+				70E060C81B2042FF005FA3E6 /* ConcurrentDemoViewController.h */,
+				70E060C91B2042FF005FA3E6 /* ConcurrentDemoViewController.m */,
+			);
+			name = ConcurrentDemo;
 			sourceTree = "<group>";
 		};
 		70F8659C1B0DC4C800CF50BA /* CADemo */ = {
@@ -464,6 +477,7 @@
 				70B7F8781A2E09C700051901 /* PopViewController.m in Sources */,
 				703723411AC01C9100D679DF /* ModelViewController.m in Sources */,
 				70B7F8511A2DEB5500051901 /* AppDelegate.m in Sources */,
+				70E060CA1B2042FF005FA3E6 /* ConcurrentDemoViewController.m in Sources */,
 				703723401AC01C9100D679DF /* User.m in Sources */,
 				70DB98391B0EDB8B00234E68 /* MasViewController.m in Sources */,
 				702C50EE1A2ED5D40022C7D8 /* RACViewController.m in Sources */,

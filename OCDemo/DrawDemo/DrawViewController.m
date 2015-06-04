@@ -66,7 +66,8 @@
 
 
     [self.view.layer addSublayer:bgPath];
-    
+
+    NSInvocation * invacation = [[NSInvocation alloc]init];
 }
 -(void)animationDidStart:(CAAnimation *)anim {
     
